@@ -82,10 +82,10 @@ namespace GradeUnitTest.Types
             Assert.AreEqual(21, date.Day);
         }
         // immutability - value types are immutable 
-        public void UppercaseString()
+        public void UppercaseString() 
         {
             string name = "hello";
-            name = name.ToUpper();
+            name = name.ToUpper();// assign name to variable 
             Assert.AreEqual("hello", name);
         }
 
