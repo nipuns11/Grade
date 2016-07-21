@@ -1,0 +1,6 @@
+c:\users\nipun.sharma\documents\visual studio 2015\Projects\Grade\Grade\bin\Debug\Grade.exe.config
+c:\users\nipun.sharma\documents\visual studio 2015\Projects\Grade\Grade\bin\Debug\Grade.exe
+c:\users\nipun.sharma\documents\visual studio 2015\Projects\Grade\Grade\bin\Debug\Grade.pdb
+c:\users\nipun.sharma\documents\visual studio 2015\Projects\Grade\Grade\obj\Debug\Grade.csprojResolveAssemblyReference.cache
+c:\users\nipun.sharma\documents\visual studio 2015\Projects\Grade\Grade\obj\Debug\Grade.exe
+c:\users\nipun.sharma\documents\visual studio 2015\Projects\Grade\Grade\obj\Debug\Grade.pdb

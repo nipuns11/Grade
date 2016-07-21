@@ -1,0 +1,9 @@
+c:\Users\nipun.sharma\documents\visual studio 2015\Projects\Grade\GradeUnitTest\bin\Debug\GradeUnitTest.dll
+c:\Users\nipun.sharma\documents\visual studio 2015\Projects\Grade\GradeUnitTest\bin\Debug\GradeUnitTest.pdb
+c:\Users\nipun.sharma\documents\visual studio 2015\Projects\Grade\GradeUnitTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+c:\Users\nipun.sharma\documents\visual studio 2015\Projects\Grade\GradeUnitTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+c:\Users\nipun.sharma\documents\visual studio 2015\Projects\Grade\GradeUnitTest\obj\Debug\GradeUnitTest.csprojResolveAssemblyReference.cache
+c:\Users\nipun.sharma\documents\visual studio 2015\Projects\Grade\GradeUnitTest\obj\Debug\GradeUnitTest.dll
+c:\Users\nipun.sharma\documents\visual studio 2015\Projects\Grade\GradeUnitTest\obj\Debug\GradeUnitTest.pdb
+c:\Users\nipun.sharma\documents\visual studio 2015\Projects\Grade\GradeUnitTest\bin\Debug\Grade.exe
+c:\Users\nipun.sharma\documents\visual studio 2015\Projects\Grade\GradeUnitTest\bin\Debug\Grade.pdb
