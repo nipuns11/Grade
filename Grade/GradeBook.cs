@@ -8,7 +8,7 @@ namespace Grade
 {
     public class GradeBook // internal: can be used by only the classes in the same assembly, private : only in the same class 
     {
-        public string Name;
+        public string Name;// pvt class members-small caps public - upper case 
         public GradeBook()// default constructor , no return type for constructor , special instance of a class
         {
             grades = new List<float>();
@@ -39,6 +39,10 @@ namespace Grade
             stats.AverageGrade = sum / grades.Count;
             return stats;
         }
+
+
+      
+    
 
     }
 }

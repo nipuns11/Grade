@@ -12,6 +12,8 @@ namespace Grade
         static void Main(string[] args)
         {
 
+        
+
             SpeechSynthesizer synth = new SpeechSynthesizer();
             synth.Speak("Grade book program");
             GradeBook book = new GradeBook(); //constructor invoked for new instance, special methods to initialize methods 
