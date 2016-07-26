@@ -8,17 +8,42 @@ namespace Grade
 {
     public class GradeBook // internal: can be used by only the classes in the same assembly, private : only in the same class 
     {
-        public string Name;// pvt class members-small caps public - upper case 
+        
         public GradeBook()// default constructor , no return type for constructor , special instance of a class
         {
+            _name = "Grades";
             grades = new List<float>();
         }
+
+        public string Name // auto implement property 
+        {
+            get
+            {
+                return _name;
+            }
+            set
+            {
+                if(!String.IsNullOrEmpty(value))
+                {
+                    if(_name != value)
+                    {
+                        NameChangedEventArgs args = new NameChangedEventArgs();
+                        args.existingName = _name;
+                        args.newName = value;
+                     
+                        nameChanged(this, args);
+                    }
+                    _name = value;
+                }
+            }// 
+        }
+        private string _name;
         public void AddGrade(float grade) // access modifier 
         {
             grades.Add(grade);
         }
 
-        public List<float> grades = new List<float>();// creating a new object with new keyboard , if private then encapsulation 
+        public List<float> grades;// creating a new object with new keyboard , if private then encapsulation 
 
         // Class is a blueprint for creating objects  
         // static - without creating a instance , they will not change when defined 
@@ -40,9 +65,7 @@ namespace Grade
             return stats;
         }
 
-
-      
-    
+        public NameChnagedDelegate nameChanged;
 
     }
 }
