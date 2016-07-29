@@ -8,5 +8,5 @@ namespace Grade
 {
     public delegate void NameChnagedDelegate(object sender, NameChangedEventArgs args);
 
-       
+
 }

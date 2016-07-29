@@ -48,6 +48,17 @@ namespace GradeUnitTest
 
 
         }
+
+        [TestMethod]
+        public void ComputeGradeLetter()
+        {
+            GradeBook book = new GradeBook();
+            book.AddGrade(80);
+            book.AddGrade(80);
+
+            GradeStatistics result = book.ComputeStatistics();
+            Assert.AreEqual("B", result.LetterGrade);
+        }
     }
 
 }

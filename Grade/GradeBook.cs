@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,14 +9,15 @@ namespace Grade
 {
     public class GradeBook // internal: can be used by only the classes in the same assembly, private : only in the same class 
     {
-        
+
         public GradeBook()// default constructor , no return type for constructor , special instance of a class
         {
             _name = "Grades";
             grades = new List<float>();
         }
 
-        public string Name // auto implement property 
+        public string Name // auto implement property  
+            // one method calls another method calls another method builds a stack 
         {
             get
             {
@@ -23,20 +25,35 @@ namespace Grade
             }
             set
             {
-                if(!String.IsNullOrEmpty(value))
+                if (String.IsNullOrEmpty(value))// throw 
+
+
                 {
-                    if(_name != value)
+                    throw new ArgumentException("Name cannot be null or empty");
+                }  
+
+
+                    if (_name != value && nameChanged != null)
                     {
                         NameChangedEventArgs args = new NameChangedEventArgs();
                         args.existingName = _name;
                         args.newName = value;
-                     
+
                         nameChanged(this, args);
                     }
                     _name = value;
                 }
-            }// 
+            }
+        
+
+        public void WriteGrades(TextWriter destination) // you can use return in void method
+        {
+            for (int i = 0; i < grades.Count; i++)
+            {
+                destination.WriteLine(grades[i]);
+            }
         }
+
         private string _name;
         public void AddGrade(float grade) // access modifier 
         {
@@ -69,3 +86,4 @@ namespace Grade
 
     }
 }
+// the throw is used to raise a exception 
